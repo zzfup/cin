@@ -1,6 +1,6 @@
 # cin
 
-TODO: Write a description here
+类似go语言的gin框架
 
 ## Installation
 
@@ -8,7 +8,19 @@ TODO: Write installation instructions here
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+require "cin"
+
+r = Cin.default
+
+def j(ctx)
+  {hello: "zhuzhenfeng"}
+end
+
+r.use(JsonHandler)
+r.get("/json", ->j(Cin::Context))
+r.run()
+```
 
 ## Development
 
