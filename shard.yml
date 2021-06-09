@@ -1,0 +1,17 @@
+name: cin
+version: 0.1.0
+
+authors:
+  - zhuzhenfeng.code <zhuzhenfeng.code@bytedance.com>
+
+targets:
+  cin:
+    main: src/cin.cr
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+
+crystal: 1.0.0
+
+license: MIT
